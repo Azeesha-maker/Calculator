@@ -1,0 +1,99 @@
+/* Reset and base setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8d5e1;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Calculator container */
+#calc {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator box */
+#content {
+  background: #f6bcd1;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Display screen */
+#output {
+  margin-bottom: 20px;
+}
+
+#output input {
+  width: 100%;
+  height: 60px;
+  font-size: 32px;
+  text-align: left;
+  padding: 15px 20px;
+  background-color: #d3d3d3;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: 'Digital-7', monospace; /* Optional digital look */
+}
+
+/* Buttons layout */
+#res {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Button base style */
+#content form input[type="button"] {
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px;
+  cursor: pointer;
+  background: #fce4ec;
+  color: #b71c5e;
+  box-shadow: inset -4px -4px 10px #fff,
+              inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+#content form input[type="button"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Function buttons */
+#clear, #backspace {
+  background-color: #b43760;
+  color: white;
+}
+
+/* Example optional styling for specific buttons */
+input[value="AC"], input[value="CE"] {
+  background-color: #ec407a;
+  color: white;
+}
+
+input[value="="] {
+  background-color: #ca1d57;
+  color: white;
+}
+
+/* Optional font import for display */
+@import url('https://fonts.cdnfonts.com/css/digital-7');
